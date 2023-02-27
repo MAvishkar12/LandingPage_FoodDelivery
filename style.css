@@ -1,0 +1,324 @@
+/* CSS Reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* Navigation bar  */
+#navbar{
+    display: flex;
+    align-items: center;
+    font-family: 'Playfair Display', serif;
+    position:absolute;
+    top: 0px;
+}
+
+/* Navigation bar image and logo */
+
+.logo{
+     margin: 10px 11px ; 
+ }
+
+.logo img{
+    margin: 1px  17px;
+    height: 54px;
+    box-shadow: 2px 2px 26px grey;
+
+}
+
+/* Navigation bar list styling */
+
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content: "";
+    
+    background-color:grey;
+    position:absolute;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    height:100%;
+    z-index:-1;
+    opacity: 0.4;
+   }
+
+#navbar ul li {
+    list-style: none;
+    font-size: 20px
+    /* remove dots in nvabar */
+    }
+
+#navbar ul li a{
+    display: inline-block;
+    padding: 1px 123px;
+    color: white;
+    border-radius: 10px;
+    font-family: 'Playfair Display', serif;
+    text-decoration: none; 
+    box-shadow: 2px 2px 26px grey;
+    
+}
+
+#navbar ul li a:hover{
+    color:black;
+    background-color:beige;
+
+}
+
+/* section */
+
+#homekey{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px ;
+    justify-content: center;
+    align-items: center;
+    height: 640px;
+}
+
+
+#homekey::before{
+    content: "";
+    position:absolute;
+    background: url('../bakground.jpg') no-repeat center center/cover;
+    top: 0px;
+    left: 0px;
+    height: 91%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+#homekey h1{
+    color: white;
+    text-align: center;
+}
+.primary{
+    font-size: 41px;
+    padding: 10px;
+    font-family: 'Playfair Display', serif;
+}
+
+#homekey p{
+    font-size: 17px;
+    color: aliceblue;
+    font-style: italic;
+}
+
+
+/* Button  */
+
+.btn{
+    
+    padding: 5px 10px;
+    margin: 27px auto;
+    color: white;
+    border: 2px solid white;
+    border-radius: 20px ;
+    background-color:#df6868;
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    cursor: pointer;
+    animation: avishkar;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+#homekey button:hover{
+    background-color:white;
+    color:black;
+}
+
+@keyframes avishkar {
+   
+    0% {background-color: red;}
+    25% {background-color:blue;}
+    50% {background-color:greenyellow;}
+    75% {background-color: violet;}
+    100% {background-color:brown;}
+    
+}
+
+.center{
+    text-align: left;
+    
+}
+
+/* services section */
+
+#services{
+    display: flex;
+    margin: 18px;
+    
+}
+
+#services .box{
+    border: 2px solid;
+    border-color: red;
+    padding: 34px;
+    margin: 3px 4px;
+    background-color: darkgrey;
+    border-radius: 50px;
+    animation: more;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes more {
+    from{
+        border-color: greenyellow;
+    }
+    to{
+        border-color: blueviolet;
+    }
+
+}
+
+#services .box img{
+    height: 100px;
+    display: block;
+    margin: auto;
+    padding: 11px 14px;
+    
+}
+
+#services .box:hover{
+    background-color:rgb(160, 149, 149);
+}
+
+.center{
+    align-items: center;
+}
+
+.h-primary-center{
+    text-align: center;
+    padding: 1px;
+    font-size: 35px;
+    margin-top:1px ;
+   
+}
+
+.h-secondary-center{
+    text-align: center;
+    font-style: italic;
+}
+
+#client-section{
+    height: 290px;
+    
+    
+}
+
+#client-section::before{
+    content: "";
+    position:absolute;
+    width: 100%;
+    background: url(../spaghetti-1932466.jpg) no-repeat center center/cover;
+    height: 32%;
+    z-index: -1;
+    opacity: 0.4;
+  
+}
+
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     height: 51%;
+     padding: 20px;
+}
+
+#clients img{
+     height: 100px; 
+    display: inline-block;
+    padding: 2px 17px;
+}
+
+
+.client-item{
+    padding: 3px 5px;
+}
+
+.client-item h5{
+    text-align: center;
+    padding: 3px;
+
+}
+
+.client-item h5:hover{
+    background-color:grey;
+}
+#head{
+  text-align: center;
+}
+
+#contact {
+    position: relative;
+}
+
+#contact::before{
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(../vegetables-3193196.jpg) no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+
+#contact-box{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+    margin-bottom: 2px;
+    
+}
+
+#contact-box textarea,input:hover{
+    background-color: rgb(216, 211, 211)
+}
+
+#contact-box label{
+    font-size: 18px;
+    font-family: 'Playfair Display', serif;
+}
+
+#contact-box form{
+     width: 40%; 
+     
+}
+
+#contact-box{
+    padding-bottom: 10px;
+}
+
+
+#contact-box input,
+#contact-box textarea{ 
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow:5px 7px 18px gray;
+    padding: 12px;
+    width: 100%;
+    padding: 0.5rem;
+    
+}
+
+.footer{
+    background-color: rgb(240, 198, 198);
+    text-align: center;
+     padding: 6px 24px;
+    color: red;
+    position: relative;
+    bottom: 0px;
+}
+
+
+
+
